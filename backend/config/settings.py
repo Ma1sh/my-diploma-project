@@ -14,6 +14,14 @@ from pathlib import Path
 from datetime import timedelta
 import os
 
+# Отключаем проверку на favicon (временно)
+from django.http import HttpResponse
+def favicon_view(request):
+    return HttpResponse(status=204)  # No Content
+
+# Или просто разрешаем все запросы
+SECURE_SSL_REDIRECT = False
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-your-secret-key-change-in-production'

@@ -7,3 +7,4 @@ python-decouple
 psycopg2-binary
 djoser
 djangorestframework-simplejwt
+gunicorn

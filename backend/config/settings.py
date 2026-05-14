@@ -20,7 +20,7 @@ SECRET_KEY = 'django-insecure-your-secret-key-change-in-production'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['my-diploma-project-29ek.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
